@@ -1,0 +1,23 @@
+.cards__wrapper {
+  padding: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 869px) {
+  .cards__wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .cards__wrapper {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*# sourceMappingURL=card_helper.css.map */

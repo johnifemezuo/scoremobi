@@ -1,0 +1,110 @@
+.tooltips_top, .tooltips_top_arrow {
+  background-color: #555;
+  padding: 5px 10px;
+  border-radius: 6px;
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: -135%;
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: white;
+  border: 1px solid white;
+  -webkit-transition: all  .8s ease-in-out;
+  transition: all  .8s ease-in-out;
+}
+
+.toolTips:hover .tooltips_top, .toolTips:hover .tooltips_top_arrow {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all  .8s ease-in-out;
+  transition: all  .8s ease-in-out;
+}
+
+.tooltips_bottom, .tooltips_bottom_arrow {
+  background-color: #555;
+  padding: 5px 15px !important;
+  border-radius: 6px;
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: 135%;
+  z-index: 2;
+  display: block;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  border: 1px solid white;
+  width: unset;
+}
+
+.toolTips:hover .tooltips_bottom, .toolTips:hover .tooltips_bottom_arrow {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all  .8s ease-in-out;
+  transition: all  .8s ease-in-out;
+}
+
+.tooltips_left, .tooltips_left_arrow {
+  background-color: #555;
+  padding: 5px 15px !important;
+  border-radius: 6px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 0px;
+  z-index: 2;
+  display: block;
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid white;
+  width: unset;
+}
+
+.toolTips:hover .tooltips_left, .toolTips:hover .tooltips_left_arrow {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all  .8s ease-in-out;
+  transition: all  .8s ease-in-out;
+}
+
+.tooltips_right, .tooltips_right_arrow {
+  background-color: #555;
+  padding: 5px 15px !important;
+  border-radius: 6px;
+  position: absolute;
+  margin: 0;
+  right: 0;
+  top: 0px;
+  z-index: 2;
+  display: block;
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid white;
+  width: unset;
+}
+
+.toolTips:hover .tooltips_right, .toolTips:hover .tooltips_right_arrow {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all  .8s ease-in-out;
+  transition: all  .8s ease-in-out;
+}
+/*# sourceMappingURL=DefaultTooltips.css.map */

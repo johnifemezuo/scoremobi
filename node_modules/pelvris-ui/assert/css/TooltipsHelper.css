@@ -1,0 +1,25 @@
+.tooltips_section {
+  background-color: rgba(129, 113, 113, 0.281);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.tooltips_section h1 {
+  font-size: 23px;
+  padding: 0 0 10px;
+  text-align: center;
+}
+
+.tooltips_section .tooltips__helper {
+  width: 80%;
+  margin: 10px auto;
+  border: 1px solid black;
+  padding: 20px 0;
+}
+
+.tooltips_section .tooltips__helper .tooltips_wrapper {
+  position: relative;
+  width: 80%;
+  margin: 30px auto;
+}
+/*# sourceMappingURL=TooltipsHelper.css.map */

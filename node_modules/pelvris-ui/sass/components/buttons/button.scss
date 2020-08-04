@@ -1,0 +1,362 @@
+/**
+  DEFAULTS
+**/
+
+button {
+  -webkit-appearance: button;
+}
+
+.btn {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: .70rem 1rem;
+  outline: none;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: 1.5;
+  margin: 0;
+  // font-size: 1rem;
+  transition: 0.15s ease-in-out;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  appearance: button;
+  -webkit-appearance: button;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  @include default_transition();
+  
+  &.btn_full_w{
+    @include full_w()
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px $border-outline;
+    box-sizing: border-box;
+  }
+  &:hover{
+    background-color: $btnDefaultColorHover!important;
+  }
+}
+
+
+// ======================================================BUTTON SIZES============================================
+
+// BTN SIZE LG
+ .btn_lg{
+      padding: 9px 14px;
+      font-size: 1.3em;
+  }
+  // BTN SIZE MD
+  .btn_md{
+      padding: 9px 13px;
+      font-size: 1em;
+  }
+  //  BTN SIZE SM
+  .btn_sm{
+      padding: 7px 8px;
+      font-size: 0.75rem;
+  }
+
+
+  .btn_flat {
+    border-radius: 0;
+  }
+
+
+// // btn__iocn_border__radius
+
+// .btn_icon_circle{
+//     border-radius: 50%;
+//     height: 50px;
+//     width: 50px;
+//     padding: 0;
+//     min-width: 0;
+// }
+// .btn_icon_squre{
+//     height: 50px;
+//     width: 50px;
+//     min-width: 0;
+// }
+
+// //======================= Reset Border  ==========================
+// .btn_no_border_radius{
+//   border-radius: unset!important;
+// }
+// // <================ Button Radius  Global Styling here   ========================>
+//  .btn_round_warning, .btn_round_success, .btn_round_danger, .btn_round_info{
+//     background-color: unset;
+//     color: $black-color;
+//     // border-radius: 23.8154px;
+
+//   &:focus{
+//     border-radius: 23.8154px;
+//     // border: 1px solid transparent;
+//   }
+// }
+
+
+
+
+.btn_block_level {
+  width: 100%;
+  padding: 12px 0px;
+}
+
+
+// ======================================================BUTTON COLORS============================================
+
+.btn_round{
+  background-color: unset;
+  color: $black-color;
+  border-radius: 50px;
+  padding: 9px 18px;
+}
+
+.btn_primary{
+ background-color:$primary-color;
+ color: $secondary-color;
+
+  &:hover{
+    background-color: $primary-color-hover!important;
+    color: white;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #7fbcff!important;
+  }
+}
+
+.btn_success{
+  background-color: $success-color;
+  color: $secondary-color;
+
+  &:hover{
+    background-color: $success-color-hover!important;;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #93d3a1;
+  }
+}
+
+// Button Round
+.btn_round_success{
+  border: 2px solid  $success-color;
+
+  &:hover{
+    background-color:$success-color;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #93d3a1;
+  }
+}
+
+// 
+.btn_warning{
+   background-color: $warning-color;
+   color: $secondary-color;
+
+   &:hover{
+    background-color:$warning-hover-color !important; 
+  }
+  &:focus {
+    box-shadow: 0px 0px 0px 2px $warning-outline;
+  }
+}
+// 
+.btn_round_warning{
+  border: 2px solid  $warning-color;
+  border-radius: 20px;
+
+  &:hover{
+    background-color: $warning-hover-color ;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #ffe082;
+  
+  }
+}
+
+
+
+.btn_info{
+  background-color: $info-color;
+  color: $secondary-color;
+
+  &:hover{
+    background-color:  $info-hover-color!important;;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px#45b7d1;
+  }
+      
+}
+
+//
+.btn_round_info{
+  // border: 2px solid $info-color;
+  border-radius: 20px;
+
+  &:hover{
+    background-color: $info-color !important;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #1b6d85;
+  
+  }
+}
+
+//
+.btn_danger{
+  background-color:$danger-color;
+  border-color: $danger-color;
+  color: $secondary-color;
+  // box-shadow: 0px 0px 3px $danger-color!important;
+
+  &:hover{
+    background-color:$danger-hover!important;;
+  }
+  &:focus {
+    box-shadow: 0px 0px 0px 2px$danger-outline;
+  }
+}
+
+// 
+.btn_round_danger{
+  border: 2px solid $danger-color;
+
+  &:hover{
+    background-color: $danger-color;
+    color:$secondary-color!important;
+  }
+
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #ed99a1;
+  
+  }
+}
+
+// Dark Color
+.btn_dark{
+  background-color:$dark!important;;
+  // box-shadow: 0px 0px 3px $dark!important;
+  color: $secondary-color;
+
+  &:hover{
+    background-color:#222!important;
+  }
+
+  &:focus{
+    box-shadow: 0px 0px 0px 2px $dark-outline !important;
+  
+  }
+}
+
+
+// ======================================================BUTTON OUTLINE============================================
+.btn_lineBtn_primary, .btn_border_primary{
+  border: 1px solid $primary-color;
+  background-color: transparent;
+  color: $primary-color;
+
+  &:hover{
+    background-color: $primary-color-hover!important;
+    color:$secondary-color;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #7fbcff;
+  }
+}
+// --------------------------------
+.btn_lineBtn_success, .btn_border_primary{
+  border: 1px solid $success-color;
+  background-color: transparent;
+  color: $success-color;
+
+  &:hover{
+    background-color: $success-color !important;
+    color:$secondary-color;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #7fbcff;
+  }
+}
+
+// --------------------------------
+.btn_lineBtn_info, .btn_border_primary{
+  border: 1px solid $info-color;
+  background-color: transparent;
+  color: $info-color;
+
+  &:hover{
+    background-color: $info-hover-color!important;;
+    color:$secondary-color!important;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #7fbcff;
+  }
+}
+
+// --------------------------------
+.btn_lineBtn_danger, .btn_border_primary{
+  border: 1px solid $danger-color;
+  background-color: transparent;
+  color: $danger-color;
+
+  &:hover{
+    background-color: $danger-color!important;;
+    color:$secondary-color!important;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px $danger-outline;
+  }
+}
+
+// --------------------------------
+.btn_lineBtn_dark, .btn_border_primary{
+  border: 1px solid $dark;
+  background-color: transparent;
+  color: $dark;
+
+  &:hover{
+    background-color: $dark !important;;
+    color:$secondary-color!important;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px $dark-outline;
+  }
+}
+
+// --------------------------------
+.btn_lineBtn_warning, .btn_border_primary{
+  border: 1px solid $warning-color;
+  background-color: transparent;
+  color: $warning-color;
+
+  &:hover{
+    background-color: $warning-hover-color !important;
+    color:$secondary-color;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px $warning-outline;
+  }
+}
+
+// --------------------------------
+.btn_lineBtn_light, .btn_border_primary{
+  border: 1px solid $border-color;
+  background-color: transparent;
+  color: $border-color;
+
+  &:hover{
+    background-color: $secondary-color;
+    color:$secondary-color;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px $border-outline;
+  }
+}

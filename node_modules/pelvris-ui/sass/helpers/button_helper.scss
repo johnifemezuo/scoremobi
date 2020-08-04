@@ -1,0 +1,46 @@
+    
+    @import "../media_query/media_query.scss";
+
+    .section__btn_wrap{
+        width:  100%;
+        padding: 20px;
+
+        @include mobile {
+          padding: 15px;
+        }
+    
+   //  Responsivenes fo Tablet Size
+        // @include TablelSize{
+        //   width:  85%;
+        //   margin:40px auto ;
+        // }
+           //  Responsivenes fo Tablet Size
+
+        .btn_flex_wrap{
+          @include medium-desktop {
+            display:block!important;
+            grid-template-columns:unset!important;
+          }  
+        }
+
+        .dis {
+          margin: 12px 6px 0px 0px;
+        }
+     
+        p.btn_radius{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            font-weight: 500;
+            padding: 8px 0;
+            text-transform: uppercase;
+            color: #1b1b1b;
+            margin:40px auto 0;
+         }
+   
+    }
+    
+    .lg_btn_wrapper {
+      margin: 10px 0px 50px 0px;
+    }

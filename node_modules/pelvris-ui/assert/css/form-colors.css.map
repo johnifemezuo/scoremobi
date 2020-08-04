@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../sass/colors/form-colors.scss"
+    ],
+    "names": [],
+    "file": "form-colors.css"
+}

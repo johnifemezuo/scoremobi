@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../sass/sizes/major-sizes.scss"
+    ],
+    "names": [],
+    "file": "major-sizes.css"
+}

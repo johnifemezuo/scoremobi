@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;EAEE",
+    "sources": [
+        "../../sass/helpers/grid-funcs.scss",
+        "../../sass/sizes/major-sizes.scss"
+    ],
+    "names": [],
+    "file": "grid-funcs.css"
+}

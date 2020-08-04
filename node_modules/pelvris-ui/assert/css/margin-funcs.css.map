@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../sass/helpers/margin-funcs.scss"
+    ],
+    "names": [],
+    "file": "margin-funcs.css"
+}

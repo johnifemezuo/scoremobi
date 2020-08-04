@@ -1,0 +1,18 @@
+.site {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr (minmax(auto, 10em))[6] 1fr;
+      grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
+  -ms-grid-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
+      grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
+}
+
+.masthead, .colophon {
+  grid-column: span 4;
+}
+
+.grid-color {
+  background-color: #f7f7f7;
+  border: 1px solid #aaa8a8;
+}
+/*# sourceMappingURL=grid_helper.css.map */

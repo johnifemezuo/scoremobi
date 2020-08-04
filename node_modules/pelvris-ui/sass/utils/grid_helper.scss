@@ -1,0 +1,17 @@
+// GRID LEARN
+
+.site {
+  display: grid;
+  grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
+  grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
+
+}
+
+.masthead, .colophon{
+  grid-column: span 4;
+}
+
+.grid-color{
+  background-color: rgb(247, 247, 247);
+  border:1px solid rgb(170, 168, 168);
+}

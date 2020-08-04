@@ -1,0 +1,126 @@
+
+@import '../media_query/media_query.scss';
+
+.bg-color {
+    background-color: white;
+}
+
+.cards__wrapper {
+    padding: 15px; 
+    max-width: 1200px;
+    margin: 30px;
+
+   @include tablet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+   }
+   @include medium-desktop {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+}
+
+
+.header {
+    color: rgb(12, 12, 12);
+    font-size: 1.6rem;
+    font-weight: 400;
+    // padding: 0px 0px 10px 0px;
+}
+.head {
+    margin-left: 50px;
+    // padding: 16px 0 0 0 ;
+
+    @include mobile {
+        margin: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

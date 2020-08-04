@@ -1,0 +1,37 @@
+// helpers 
+
+//  tooltips_section //
+.tooltips_section{
+    background-color: #f1efef;
+    padding: 20px 0;
+    margin: 50px 0 50px 0;
+    height: auto;
+    
+   
+    // tooltips__helper
+    .tooltips__helper{
+        width: 100%;
+        padding: 20px 0;
+        background-color: transparent;
+        display: grid;
+
+
+        // Tooltips wrappr //
+        .tooltips_wrapper{
+            position: relative;
+            width: auto;
+            margin: 40px;
+            display: flex;
+            padding: 12px;
+            flex-wrap: wrap;
+            
+            
+        }
+    }
+}
+ 
+.bmr {
+    margin: 10px;
+}
+  
+    

@@ -1,0 +1,13 @@
+@import "../helpers/margin-funcs.scss";
+
+@include infiniteMargin(100, 'l');
+@include infiniteMargin(100, 'r');
+@include infiniteMargin(100, 't');
+@include infiniteMargin(100, 'b');
+@include infiniteMargin(100, 'none');
+
+@include infinitePadding(100, 'l');
+@include infinitePadding(100, 'r');
+@include infinitePadding(100, 't');
+@include infinitePadding(100, 'b');
+@include infinitePadding(100, 'none');

@@ -1,0 +1,112 @@
+// .tooltips_top
+
+@mixin transition {
+  transition: all 0.3s ease-in-out;
+}
+
+
+.tooltips_top, .tooltips_top_arrow{
+    background-color: #555;
+    padding:10px ;
+    border-radius: 6px;
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    top:-135%;
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    transform: translateX(-50%);
+    color:white;
+    border: 1px solid white;
+    @include transition();
+   
+  }
+  .toolTips:hover .tooltips_top,  .toolTips:hover .tooltips_top_arrow{
+    visibility: visible;
+    opacity: 1;
+    @include transition();
+  }
+  
+ 
+
+
+  // .tooltips_bottom
+.tooltips_bottom, .tooltips_bottom_arrow{
+    background-color: #555;
+    padding:10px ;
+    border-radius: 6px;
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    top:135%;
+    z-index: 2;
+    display: block;
+    transform: translateX(-50%);
+    color:white;
+    visibility: hidden;
+    opacity: 0;
+    @include transition();
+    border: 1px solid white;
+    width: unset;
+}
+.toolTips:hover .tooltips_bottom , .toolTips:hover .tooltips_bottom_arrow{
+    visibility: visible;
+    opacity: 1;
+    @include transition();
+}
+
+
+
+
+// tooltips left
+.tooltips_left,  .tooltips_left_arrow{
+      background-color: #555;
+      padding:10px;
+      border-radius: 6px;
+      position: absolute;
+      margin: 0;
+      left: 0;
+      top:0px;
+      z-index: 2;
+      display: block;
+      transform: translateX(-120%);
+      color:white;
+      visibility: hidden;
+      opacity: 0;
+      @include transition();
+      border: 1px solid white;
+      width: unset;
+  }
+  .toolTips:hover .tooltips_left ,    .toolTips:hover  .tooltips_left_arrow{
+    visibility: visible;
+    opacity: 1;
+    @include transition();
+}
+
+
+
+// tooltips_right
+.tooltips_right ,  .tooltips_right_arrow{
+  background-color: #555;
+  padding:10px;
+  border-radius: 6px;
+  position: absolute;
+  margin: 0;
+  right: 0;
+  top:0px;
+  z-index: 2;
+  display: block;
+  transform: translateX(120%);
+  color:white;
+  visibility: hidden;
+  opacity: 0;
+  @include transition();
+  border: 1px solid white;
+  width: unset;
+}
+  .toolTips:hover .tooltips_right , .toolTips:hover  .tooltips_right_arrow{
+    visibility: visible;
+    opacity: 1;
+    @include transition();
+}

@@ -1,0 +1,127 @@
+/**
+Using display: grid;
+*/
+.col-m-0-0 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0fr 0fr;
+      grid-template-columns: 0fr 0fr;
+  grid-gap: 0.8rem;
+}
+
+.col-m-1-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 0.8rem;
+}
+
+.col-m-2-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
+  grid-gap: 0.8rem;
+}
+
+.col-m-3-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 3fr;
+      grid-template-columns: 3fr 3fr;
+  grid-gap: 0.8rem;
+}
+
+.col-m-4-4 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 4fr;
+      grid-template-columns: 4fr 4fr;
+  grid-gap: 0.8rem;
+}
+
+.col-m-5-5 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 5fr;
+      grid-template-columns: 5fr 5fr;
+  grid-gap: 0.8rem;
+}
+
+.col-m-6-6 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6fr 6fr;
+      grid-template-columns: 6fr 6fr;
+  grid-gap: 0.8rem;
+}
+
+.col-m-7-7 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7fr 7fr;
+      grid-template-columns: 7fr 7fr;
+  grid-gap: 0.8rem;
+}
+
+.col-m-8-8 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8fr 8fr;
+      grid-template-columns: 8fr 8fr;
+  grid-gap: 0.8rem;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2px;
+}
+
+.g-col-1 {
+  grid-column: span 1;
+}
+
+.g-col-2 {
+  grid-column: span 2;
+}
+
+.g-col-3 {
+  grid-column: span 3;
+}
+
+.g-col-4 {
+  grid-column: span 4;
+}
+
+.g-col-5 {
+  grid-column: span 5;
+}
+
+.g-col-6 {
+  grid-column: span 6;
+}
+
+.g-col-7 {
+  grid-column: span 7;
+}
+
+.g-col-8 {
+  grid-column: span 8;
+}
+
+.g-col-9 {
+  grid-column: span 9;
+}
+
+.g-col-10 {
+  grid-column: span 10;
+}
+
+.g-col-11 {
+  grid-column: span 11;
+}
+/*# sourceMappingURL=grids.css.map */
